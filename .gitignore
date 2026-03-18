@@ -1,55 +1,28 @@
-# Prerequisites
-*.d
+#include <stdio.h>
 
-# Object files
-*.o
-*.ko
-*.obj
-*.elf
+int main(void) {
+    // This header tells the browser to expect an HTML document
+    printf("Content-Type: text/html\n\n");
 
-# Linker output
-*.ilk
-*.map
-*.exp
+    printf("<!DOCTYPE html>\n<html>\n<head>\n");
+    printf("<title>The Power of Verifiable Data</title>\n");
+    printf("<style>body{font-family:sans-serif; line-height:1.6; padding:40px; max-width:800px; margin:auto; background:#f4f4f4; color:#333;}</style>\n");
+    printf("</head>\n<body>\n");
 
-# Precompiled Headers
-*.gch
-*.pch
+    printf("<h1>Why Verifiable Data Matters</h1>\n");
+    printf("<p>In a world of misinformation, <strong>verifiability</strong> is the new gold standard.</p>\n");
 
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
+    printf("<h3>3 Pillars of Verifiable Data:</h3>\n");
+    printf("<ul>\n");
+    printf("<li><strong>Authenticity:</strong> Knowing exactly who created the data.</li>\n");
+    printf("<li><strong>Non-repudiation:</strong> The creator cannot deny they sent it.</li>\n");
+    printf("<li><strong>Tamper-resistance:</strong> Ensuring the data hasn't changed since creation.</li>\n");
+    printf("</ul>\n");
 
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
+    printf("<hr>\n");
+    printf("<p><small>This site was served using the C programming language.</small></p>\n");
+    
+    printf("</body>\n</html>\n");
 
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
-
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
-
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
-
-# debug information files
-*.dwo
+    return 0;
+}
